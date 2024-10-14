@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(48, 48, 48);
+}
+
+form{
+    max-width: 512px;
+    display: flex;
+   
+    flex-flow: column nowrap;
+
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+    margin: auto;
+    color: rgb(255, 255, 247);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: auto;
+    
+    
+    label{
+        font-weight: 600;
+        font-size: larger;
+    }
+    input{
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: rgb(185, 185, 185);
+        padding: 10px;
+        width: 50dvh;
+
+        font-size: large;
+        transition: 300ms;
+        
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    #sum{
+        width: 60%;
+        padding: 7px;
+        transition: 400ms;
+    }
+
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        gap: 5px;
+    }
+    #sum:hover{
+        scale: 1.2;
+        opacity: 1;
+        cursor:grab;
+    }
+    
+    input:hover{
+        opacity: 0.5;
+    }
+
+    a{
+        color: rgb(201, 209, 255);
+        font-size: larger;
+    }
+}
